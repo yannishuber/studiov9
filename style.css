@@ -404,4 +404,27 @@ a {
         background-repeat: no-repeat;
         background-position: center;
     }
+    footer {
+        width: 100%;
+        padding-bottom: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+    #footer-biel {
+        grid-row: 1;
+        grid-column: 1;
+    }
+    #footer-vevey {
+        grid-row: 1;
+        grid-column: 2;
+        justify-self: right;
+        text-align: right;
+    }
+    #copyright {
+        margin-top: 10px;
+        grid-row: 2;
+        grid-column: 1 /span 2;
+        justify-self: center;
+    }
 }
