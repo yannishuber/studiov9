@@ -7,7 +7,7 @@
 get_header();
 ?>
 
-<div id="project-container">
+<section id="project-container">
     <?php
 
     // retrieve all projects posts
@@ -25,7 +25,7 @@ get_header();
     }
     ?>
 
-</div><!-- #primary -->
+</section><!-- #primary -->
 
 <?php
-get_footer();
+get_footer('nocontact');
