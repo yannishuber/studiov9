@@ -10,7 +10,7 @@
         );
         $first = True;
         $attachments = get_posts($args);
-        foreach ($attachments as $i) : ?>
+        foreach (shuffle($attachments) as $i) : ?>
             <div class="carousel-item <?php if($first) {$first = False; echo 'active';} ?>" style="background-image: url('<?php echo $i->guid; ?>')"></div>
         <?php endforeach; ?>
     </div>

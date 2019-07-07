@@ -36,24 +36,7 @@
 
             $(".menu-icon").on("click", () => {
                 $(".mobile-nav-content").toggleClass("show");
-                // $(".title-bar").addClass("blur");
-                // $(".main-content").addClass("blur");
-                // $("footer").addClass("blur");
-
             });
-
-            // $(".mobile-nav-content").on("click", () => {
-            //     console.log($(event.target));
-            //     if (!$(event.target).is('.bg *')) {
-            //         // $(".title-bar").removeClass("blur");
-            //         // $(".main-content").removeClass("blur");
-            //         // $("footer").removeClass("blur");
-            //         $(".mobile-nav-content").removeClass("show");
-            //     }
-
-
-
-            // });
         });
     </script>
     <?php wp_head(); ?>
