@@ -378,6 +378,10 @@ a {
     #contact-content {
         text-align: center;
     }
+    .project-item {
+        max-height: 380px;
+        height: 380px;
+    }
     #contact {
         display: grid;
         grid-template-columns: 1fr;
