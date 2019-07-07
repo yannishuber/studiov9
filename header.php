@@ -34,7 +34,7 @@
                 interval: 4000
             })
 
-            $(".menu-icon").on("click", () => {
+            $(".menu-icon ion-icon").on("click", () => {
                 $(".mobile-nav-content").toggleClass("show");
             });
         });
