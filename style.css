@@ -416,7 +416,6 @@ ion-icon {
     }
     #project-container {
         width: 95%;
-        grid-template-columns: 1fr;
     }
     footer {
         width: 95%;
@@ -437,10 +436,6 @@ ion-icon {
     #contact-content {
         text-align: center;
     }
-    .project-item {
-        max-height: 380px;
-        height: 380px;
-    }
     #contact {
         display: grid;
         grid-template-columns: 1fr;
@@ -456,6 +451,9 @@ ion-icon {
         grid-row: 2;
         grid-column: 1;
         display: grid;
+    }
+    #project-container {
+        grid-template-columns: 1fr;
     }
     #contact-image {
         height: auto;
