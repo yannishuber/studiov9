@@ -33,7 +33,7 @@
 
             $('img').removeAttr('title');
             $('.carousel').carousel({
-                interval: 4000
+                interval: 10000
             })
 
             $(".menu-icon").on("click", () => {
