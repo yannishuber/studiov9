@@ -301,6 +301,7 @@ footer .sv9 {
     display: table-cell;
     vertical-align: middle;
     text-align: center;
+    justify-self: end;
 }
 
 .menu-icon#close {
