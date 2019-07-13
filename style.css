@@ -170,8 +170,8 @@ footer {
     font-family: sukhumvit_setlight, sans-serif;
     font-weight: lighter;
     font-size: 0.8em;
-    display: grid;
-    grid-template-columns: auto auto 1fr;
+    /* display: grid;
+    grid-template-columns: auto auto 1fr; */
 }
 
 footer p {
@@ -184,23 +184,25 @@ footer .sv9 {
 }
 
 #footer-biel {
-    grid-column: 1;
+    /* grid-column: 1; */
+    margin-bottom: 10px;
 }
 
 #footer-vevey {
-    grid-column: 2;
-    margin-left: 40px;
+    /* grid-column: 2;
+    margin-left: 40px; */
+    margin-bottom: 10px;
 }
 
 #copyright {
-    grid-column: 3;
+    /* grid-column: 3;
     justify-self: right;
-    align-self: end;
+    align-self: end; */
 }
 
 #footer-biel,
 #footer-vevey {
-    display: inline-block;
+    display: block;
 }
 
 .blur {
@@ -418,7 +420,7 @@ a {
         background-repeat: no-repeat;
         background-position: center;
     }
-    footer {
+    /* footer {
         width: 100%;
         padding-bottom: 20px;
         display: grid;
@@ -440,5 +442,5 @@ a {
         grid-row: 2;
         grid-column: 1 /span 2;
         justify-self: center;
-    }
+    } */
 }
