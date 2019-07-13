@@ -12,7 +12,7 @@
         $attachments = get_posts($args);
         shuffle($attachments);
         foreach ($attachments as $i) : ?>
-            <div class="carousel-item <?php if($first) {$first = False; echo 'active';} ?>" style="background-image: url('<?php echo $i->guid; ?>')"></div>
+            <div class="carousel-item <?php if($first) {$first = False; echo 'active';} ?>"> <img src="<?php echo $i->guid; ?>" /></div>
         <?php endforeach; ?>
     </div>
 </div>

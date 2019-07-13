@@ -323,6 +323,10 @@ a {
     background-position: center;
 }
 
+.carousel-item img {
+    width: 100%;
+}
+
 .carousel-inner .carousel-item {
     transition-property: opacity;
 }
