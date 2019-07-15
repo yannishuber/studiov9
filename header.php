@@ -27,29 +27,31 @@
         window.onload = update_images;
         screen.orientation.onchange = update_images;
 
-        function update_images() { 
+        function update_images() {
             if (window.innerWidth > 600) {
-                
+
                 var tmp = document.getElementsByClassName("mobile");
-                for(let i = 0; i < tmp.length; i++){
+                for (let i = 0; i < tmp.length; i++) {
                     tmp[i].classList.remove("carousel-item");
                 }
                 var tmp = document.getElementsByClassName("desktop");
-                for(let i = 0; i < tmp.length; i++){
+                for (let i = 0; i < tmp.length; i++) {
                     tmp[i].classList.add("carousel-item");
                 }
             } else {
                 var tmp = document.getElementsByClassName("desktop");
-                for(let i = 0; i < tmp.length; i++){
+                for (let i = 0; i < tmp.length; i++) {
                     tmp[i].classList.remove("carousel-item");
                 }
                 var tmp = document.getElementsByClassName("mobile");
-                for(let i = 0; i < tmp.length; i++){
+                for (let i = 0; i < tmp.length; i++) {
                     tmp[i].classList.add("carousel-item");
                 }
             }
 
         }
+
+
 
         $(() => {
 
@@ -58,9 +60,16 @@
                 interval: 10000
             })
 
-            $(".menu-icon").on('click touchend', (event) => {
-                event.preventDefault();
-                $(".mobile-nav-content").toggleClass("show");
+            document.getElementById("open").addEventListener('touchend', function(e) {
+                // prevent compatibility mouse events and click
+                e.target.classList.add("show");
+                e.preventDefault();
+            });
+
+            document.getElementById("close").addEventListener('click', function(e) {
+                // prevent compatibility mouse events and click
+                e.target.classList.remove("show");
+                e.preventDefault();
             });
         });
     </script>
@@ -94,7 +103,7 @@
             ?>
         </nav>
         <nav class="mobile-nav-btn" role="navigation">
-            <span class="menu-icon">
+            <span class="menu-icon" id="open">
                 <ion-icon name="menu"></ion-icon>
             </span>
         </nav>
