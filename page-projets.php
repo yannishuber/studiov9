@@ -11,7 +11,7 @@ get_header();
     <?php
 
     // retrieve all projects posts
-    query_posts("cat=" . get_cat_ID('projets') . "&posts_per_page=100");
+    query_posts("cat=" . get_cat_ID('projets') . "&posts_per_page=100&order=ASC");
 
 
     if (have_posts()) {
@@ -19,8 +19,6 @@ get_header();
 
             the_post();
             get_template_part('template-parts/content/project', 'page');
-
-            //echo '<a href="' . the_permalink() . '">' . the_title() . '</a>';
         }
     }
     ?>
