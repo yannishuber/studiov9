@@ -24,8 +24,29 @@
 
     <script>
         window.onresize = update_images;
-        window.onload = update_images;
+        window.onload = init;
         screen.orientation.onchange = update_images;
+
+
+        function init() {
+            document.getElementById("open").addEventListener('click', function(e) {
+                // prevent compatibility mouse events and click
+                document.getElementById("mobile-nav-content").classList.add("show");
+                e.stopPropagation();
+                e.preventDefault();
+                
+
+            });
+            document.getElementById("close").addEventListener('click', function(e) {
+                // prevent compatibility mouse events and click
+                document.getElementById("mobile-nav-content").classList.remove("show");
+                e.stopPropagation();
+                e.preventDefault();
+                
+
+            });
+            update_images();
+        }
 
         function update_images() {
             if (window.innerWidth > 600) {
@@ -60,17 +81,7 @@
                 interval: 10000
             })
 
-            document.getElementById("open").addEventListener('touchend', function(e) {
-                // prevent compatibility mouse events and click
-                e.target.classList.add("show");
-                e.preventDefault();
-            });
 
-            document.getElementById("close").addEventListener('click', function(e) {
-                // prevent compatibility mouse events and click
-                e.target.classList.remove("show");
-                e.preventDefault();
-            });
         });
     </script>
     <?php wp_head(); ?>
@@ -79,7 +90,7 @@
 <body>
 
 
-    <div class="mobile-nav-content">
+    <div class="mobile-nav-content" id="mobile-nav-content">
         <div class="bg">
             <span class="menu-icon" id="close">
                 <ion-icon name="close"></ion-icon>
