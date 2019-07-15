@@ -25,6 +25,7 @@
     <script>
         window.onresize = update_images;
         window.onload = update_images;
+        screen.orientation.onchange = update_images;
 
         function update_images() { 
             if (screen.width < 700 || screen.orientation.angle > 0) {
