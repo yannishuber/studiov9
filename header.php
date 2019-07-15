@@ -28,7 +28,7 @@
         screen.orientation.onchange = update_images;
 
         function update_images() { 
-            if (screen.width < 700 || screen.orientation.angle > 0) {
+            if (window.innerWidth > 600) {
                 
                 var tmp = document.getElementsByClassName("mobile");
                 for(let i = 0; i < tmp.length; i++){
@@ -58,7 +58,8 @@
                 interval: 10000
             })
 
-            $(".menu-icon").on("click", () => {
+            $(".menu-icon").on('click touchend', (event) => {
+                event.preventDefault();
                 $(".mobile-nav-content").toggleClass("show");
             });
         });
