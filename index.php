@@ -7,6 +7,7 @@
         <?php $desktop = array(
             'post_type' => 'attachment',
             'category_name' => 'accueil',
+            
         );
         $first = True;
         $attachments_desktop = get_posts($desktop);
