@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="<?php echo get_bloginfo('description'); ?>">
 
-    
+
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -15,14 +15,41 @@
     <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    
+
     <link href="<?php echo get_bloginfo('template_directory'); ?>/font/stylesheet.css" rel="stylesheet">
     <link href="<?php echo get_bloginfo('template_directory'); ?>/style.css" rel="stylesheet">
 
-    <?php if(is_home()) echo '<link href="' . get_bloginfo('template_directory') . '/stylewhite.css" rel="stylesheet">'; ?>
+    <?php if (is_home()) echo '<link href="' . get_bloginfo('template_directory') . '/stylewhite.css" rel="stylesheet">'; ?>
     <title><?php echo get_bloginfo('name'); ?></title>
 
     <script>
+        window.onresize = update_images;
+        window.onload = update_images;
+
+        function update_images() { 
+            if (screen.width > 800) {
+                
+                var tmp = document.getElementsByClassName("mobile");
+                for(let i = 0; i < tmp.length; i++){
+                    tmp[i].classList.remove("carousel-item");
+                }
+                var tmp = document.getElementsByClassName("desktop");
+                for(let i = 0; i < tmp.length; i++){
+                    tmp[i].classList.add("carousel-item");
+                }
+            } else {
+                var tmp = document.getElementsByClassName("desktop");
+                for(let i = 0; i < tmp.length; i++){
+                    tmp[i].classList.remove("carousel-item");
+                }
+                var tmp = document.getElementsByClassName("mobile");
+                for(let i = 0; i < tmp.length; i++){
+                    tmp[i].classList.add("carousel-item");
+                }
+            }
+
+        }
+
         $(() => {
 
             $('img').removeAttr('title');
