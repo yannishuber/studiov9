@@ -27,7 +27,7 @@
         window.onload = update_images;
 
         function update_images() { 
-            if (screen.width < 700) {
+            if (screen.width < 700 || screen.orientation.angle > 0) {
                 
                 var tmp = document.getElementsByClassName("mobile");
                 for(let i = 0; i < tmp.length; i++){
