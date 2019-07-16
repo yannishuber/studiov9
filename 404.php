@@ -9,7 +9,7 @@ get_header();
         <p>La page que vous recherchez n'existe pas.</p>
     <center>
 
-</section><!-- #primary -->
+</section>
 
 <?php
 get_footer();

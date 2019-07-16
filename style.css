@@ -350,6 +350,8 @@ a {
 
 .sv9-menu {
     text-transform: uppercase;
+    position: relative;
+    z-index: 3;
 }
 
 ::-webkit-scrollbar {
@@ -416,12 +418,6 @@ ion-icon {
     #project-container {
         grid-template-columns: 1fr 1fr;
     }
-    nav {
-        display: none;
-    }
-    .mobile-nav-btn {
-        display: inline!important;
-    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -485,5 +481,11 @@ ion-icon {
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+    }
+    nav {
+        display: none;
+    }
+    .mobile-nav-btn {
+        display: inline!important;
     }
 }
