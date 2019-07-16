@@ -24,39 +24,30 @@
         update_images();
     }
 
-    function update_images() {
-        if (window.innerWidth > 600) {
 
-            var tmp = document.getElementsByClassName("mobile");
-            for (let i = 0; i < tmp.length; i++) {
-                tmp[i].classList.remove("carousel-item");
-            }
-            var tmp = document.getElementsByClassName("desktop");
-            for (let i = 0; i < tmp.length; i++) {
-                tmp[i].classList.add("carousel-item");
-            }
+
+
+    function update_images() {
+
+        var slides;
+
+        if (window.innerWidth > 600) {
+            slides = document.getElementsByClassName("desktop");
         } else {
-            var tmp = document.getElementsByClassName("desktop");
-            for (let i = 0; i < tmp.length; i++) {
-                tmp[i].classList.remove("carousel-item");
-            }
-            var tmp = document.getElementsByClassName("mobile");
-            for (let i = 0; i < tmp.length; i++) {
-                tmp[i].classList.add("carousel-item");
-            }
+            slides = document.getElementsByClassName("mobile");
         }
+
+        var current = 1;
+        
+        slides[0].style.opacity = 1;
+        setInterval(function() {
+            for (var i = 0; i < slides.length; i++) {
+                slides[i].style.opacity = 0;
+            }
+            current = (current + 1) % slides.length ;
+            slides[current].style.opacity = 1;
+        }, 10000);
 
     }
 
-
-
-    $(() => {
-
-        $('img').removeAttr('title');
-        $('.carousel').carousel({
-            interval: 10000
-        })
-
-
-    });
 </script>
