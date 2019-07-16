@@ -2,27 +2,17 @@
 get_header();
 ?>
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main">
+<section id="project-container">
+    <?php
 
-			<?php
+    while (have_posts()) :
+        the_post();
 
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
+        the_content();
 
-		the_content();
+    endwhile; // End of the loop.
+    ?>
 
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) {
-					comments_template();
-				}
-
-			endwhile; // End of the loop.
-			?>
-
-		</main><!-- #main -->
-	</section><!-- #primary -->
-
+</section>
 <?php
 get_footer();
