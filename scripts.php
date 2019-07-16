@@ -5,19 +5,25 @@
 
 
     function init() {
-        document.getElementById("open").addEventListener('click', function(e) {
+        document.getElementById("open").addEventListener('click', (e) => {
             document.getElementById("mobile-nav-content").classList.add("show");
             e.stopPropagation();
             e.preventDefault();
 
 
         });
-        document.getElementById("close").addEventListener('click', function(e) {
+        document.getElementById("close").addEventListener('click', (e) => {
             document.getElementById("mobile-nav-content").classList.remove("show");
             e.stopPropagation();
             e.preventDefault();
 
 
+        });
+
+        document.getElementById("arrow").addEventListener('click', (e) => {
+            scrollToTop();
+            e.stopPropagation();
+            e.preventDefault();
         });
         update_images();
     }
