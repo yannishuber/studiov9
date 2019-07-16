@@ -2,7 +2,7 @@
 get_header();
 ?>
 
-<section id="project-container">
+<section id="page-main">
     <?php
 
     while (have_posts()) :
