@@ -12,8 +12,7 @@
 get_header();
 ?>
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main">
+	<section class="project-content">
 
 			<?php
 
@@ -26,7 +25,6 @@ get_header();
 			endwhile; // End of the loop.
 			?>
 
-		</main><!-- #main -->
 	</section><!-- #primary -->
 
 <?php
