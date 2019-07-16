@@ -90,7 +90,7 @@ body {
     margin: auto;
 }
 
-.page-main {
+#page-main {
     width: 80%;
     max-width: 1200px;
     margin: auto;
@@ -428,7 +428,7 @@ ion-icon {
     .project-content {
         width: 95%;
     }
-    .page-main {
+    #page-main {
         width: 95%;
     }
     #project-container {
