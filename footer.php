@@ -11,7 +11,7 @@
     <p><a href="mailto:rouiller@studiov9.ch">rouiller@studiov9.ch</a></p>
 </div>
 <span id="copyright">STUDIOV9 2019 - Tout droits réservés</span>
-<a id="arrow" href="#"><img src="<?php echo get_bloginfo('template_directory'); ?>/static/arrow.png" width="25px"/></a>
+<a id="arrow" onclick="scrollToTop()"><img src="<?php echo get_bloginfo('template_directory'); ?>/static/arrow.png" width="25px"/></a>
 </footer>
 
 

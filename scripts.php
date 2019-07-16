@@ -43,10 +43,17 @@
             for (var i = 0; i < slides.length; i++) {
                 slides[i].style.opacity = 0;
             }
-            current = (current + 1) % slides.length ;
+            current = (current + 1) % slides.length;
             slides[current].style.opacity = 1;
         }, 10000);
 
     }
 
+    const scrollToTop = () => {
+        const c = document.documentElement.scrollTop || document.body.scrollTop;
+        if (c > 0) {
+            window.requestAnimationFrame(scrollToTop);
+            window.scrollTo(0, c - c / 8);
+        }
+    };
 </script>

@@ -218,6 +218,10 @@ footer p {
     justify-self: end;
 }
 
+#arrow:hover {
+    cursor: pointer;
+}
+
 footer .sv9 {
     font-weight: bold;
     margin-bottom: 15px;
