@@ -20,11 +20,11 @@
 
         });
 
-        document.getElementById("arrow").addEventListener('click', (e) => {
-            scrollToTop();
-            e.stopPropagation();
-            e.preventDefault();
-        });
+        // document.getElementById("arrow").addEventListener('click', (e) => {
+        //     scrollToTop();
+        //     e.stopPropagation();
+        //     e.preventDefault();
+        // });
         update_images();
     }
 
