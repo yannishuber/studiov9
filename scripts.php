@@ -1,10 +1,11 @@
 <script>
-    window.onresize = update_images;
+    <?php if (is_home()) echo 'window.onresize = update_images;'; ?>    
     window.onload = init;
-    screen.orientation.onchange = update_images;
+    <?php if (is_home()) echo 'screen.orientation.onchange = update_images;'; ?>
 
 
     function init() {
+        <?php if (is_home()) echo 'update_images();'; ?>        
         document.getElementById("open").addEventListener('click', (e) => {
             document.getElementById("mobile-nav-content").classList.add("show");
             e.stopPropagation();
@@ -20,12 +21,12 @@
 
         });
 
-        // document.getElementById("arrow").addEventListener('click', (e) => {
-        //     scrollToTop();
-        //     e.stopPropagation();
-        //     e.preventDefault();
-        // });
-        update_images();
+        document.getElementById("arrow").addEventListener('click', (e) => {
+            scrollToTop();
+            e.stopPropagation();
+            e.preventDefault();
+        });
+        
     }
 
 
@@ -43,7 +44,7 @@
             slides = document.getElementsByClassName("mobile");
             current = 1;
         }
-
+        
         slides[0].style.opacity = 1;
         setInterval(function() {
             for (var i = 0; i < slides.length; i++) {
