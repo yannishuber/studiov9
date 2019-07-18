@@ -47,3 +47,4 @@ function ajax_images_handler()
     wp_die();
 }
 add_action('wp_ajax_nopriv_images', 'ajax_images_handler');
+add_action('wp_ajax_images', 'ajax_images_handler');
