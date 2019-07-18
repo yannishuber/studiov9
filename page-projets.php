@@ -7,7 +7,7 @@
 get_header();
 ?>
 
-<section id="project-container">
+<section id="project-container" class="content">
     <?php
 
     // retrieve all projects posts

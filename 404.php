@@ -2,7 +2,7 @@
 get_header();
 ?>
 
-<section class="project-content" style="margin-top:auto;margin-bottom:auto;">
+<section class="content" style="margin-top:auto;margin-bottom:auto;">
 
     <center>
         <h2>Page introuvable</h2>

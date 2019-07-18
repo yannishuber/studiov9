@@ -20,9 +20,6 @@ add_action('wp_enqueue_scripts', 'enqueue_front_page_scripts');
 
 wp_enqueue_script('script', get_template_directory_uri() . '/static/js/script.js');
 
-
-
-
 function ajax_images_handler()
 {
     if (isset($_POST['device'])) {

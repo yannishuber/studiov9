@@ -1,21 +1,14 @@
 <?php
-
 get_header();
 ?>
-
-	<section class="project-content">
-
+	<section class="content">
 			<?php
-
 			while ( have_posts() ) {
 				the_post();
-
 				the_content();
-
             }
 			?>
-
-	</section><!-- #primary -->
+	</section>
 
 <?php
 get_footer();

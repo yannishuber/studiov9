@@ -2,17 +2,14 @@
 get_header();
 ?>
 
-<section id="page-main">
+<section id="page-main" class="content">
     <?php
-
-    while (have_posts()) :
+    while (have_posts()) {
         the_post();
 
         the_content();
-
-    endwhile; // End of the loop.
-    ?>
-
+    }
+?>
 </section>
 <?php
 get_footer();
