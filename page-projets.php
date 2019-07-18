@@ -23,7 +23,7 @@ get_header();
 
     ?>
 
-</section><!-- #primary -->
+</section>
 
 <?php
 get_footer('nocontact');

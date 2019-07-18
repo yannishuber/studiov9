@@ -37,7 +37,7 @@ body {
     z-index: 1;
 }
 
-.title-bar {
+#title-bar {
     position: relative;
     top: 0;
     left: 0;
@@ -53,11 +53,11 @@ body {
 }
 
 .mobile-nav-content a,
-.title-bar a {
+#title-bar a {
     text-decoration: none;
 }
 
-.title-bar a {
+#title-bar a {
     color: black;
 }
 
@@ -364,8 +364,7 @@ a {
     z-index: 3;
 }
 
-.desktop,
-.mobile {
+.slider-item {
     position: absolute;
     transition: opacity .5s ease-in;
     opacity: 0;
@@ -380,7 +379,7 @@ a {
     display: none;
 }
 
-.carousel {
+#home-images {
     display: inline;
     position: absolute;
     top: 0;
@@ -395,19 +394,38 @@ ion-icon {
     text-align: center;
 }
 
-.carousel-inner {
-    height: 100%;
-}
-
-.carousel-item {
+.slider-item {
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.carousel-item img {
-    width: 100%;
+#home-loader {
+    border: 5px solid;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border-color: black transparent transparent;
+    animation: spin 2s linear infinite;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+        filter: hue-rotate(360deg)
+    }
+}
+
+#title-bar.white a,
+#title-bar.white .menu-icon {
+    color: white !important;
 }
 
 
@@ -422,7 +440,7 @@ ion-icon {
 }
 
 @media only screen and (max-width: 1000px) {
-    .title-bar {
+    #title-bar {
         width: 95%;
     }
     .project-content {
@@ -446,9 +464,9 @@ ion-icon {
 }
 
 @media only screen and (max-width: 800px) {
-    .mobile {
+    /* .mobile {
         display: block;
-    }
+    } */
     #title {
         font-size: 1.6em;
     }
