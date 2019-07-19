@@ -419,9 +419,9 @@ ion-icon {
     color: white !important;
 }
 
-#title-bar.menu-item-703 a,
-#title-bar.menu-item-703.white a,
-.menu-item-703 a {
+#title-bar li.menu-item-703 a,
+#title-bar li.menu-item-703.white a,
+li.menu-item-703 a {
     color: #D0232D !important;
 }
 
