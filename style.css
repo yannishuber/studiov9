@@ -33,7 +33,7 @@ body {
     transition: .8s;
     width: 100%;
     height: 100%;
-    font-family: sukhumvit_settext, sans-serif;
+    font-family: sukhumvit_setlight, sans-serif;
     z-index: 1;
 }
 
@@ -50,6 +50,7 @@ body {
     grid-row: 1;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    font-family: sukhumvit_setthin, sans-serif;
 }
 
 .mobile-nav-content a,

@@ -8,7 +8,6 @@ const update_images = () => {
     if (device == 0 || (device == 1 && window.innerWidth < toggleWidth) || (device == 2 && window.innerWidth > toggleWidth)) {
 
         const callback = function() {
-            console.log(this.responseText)
 
             // Remove old images
             var els = document.querySelectorAll(".slider-item")
