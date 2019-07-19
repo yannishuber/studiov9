@@ -419,6 +419,10 @@ ion-icon {
     color: white !important;
 }
 
+.menu-item-703 a {
+    color: #D0232D !important;
+}
+
 @media only screen and (max-width: 1400px) {
     #project-container {
         grid-template-columns: 1fr 1fr;
