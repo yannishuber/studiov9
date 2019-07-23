@@ -15,22 +15,22 @@ const init = () => {
     })
 
 
-    if (document.getElementById("arrow") != null) {
+    // if (document.getElementById("arrow") != null) {
 
-        const scrollToTop = () => {
-            const c = Math.max(window.pageYOffset, document.documentElement.scrollTop, document.body.scrollTop)
-            if (c > 0) {
-                window.scrollTo(0, 0)
-            }
-        }
+    //     const scrollToTop = () => {
+    //         const c = Math.max(window.pageYOffset, document.documentElement.scrollTop, document.body.scrollTop)
+    //         if (c > 0) {
+    //             window.scrollTo(0, 0)
+    //         }
+    //     }
 
-        document.getElementById("arrow").addEventListener('click', (e) => {
-            scrollToTop()
-            e.stopPropagation()
-            e.preventDefault()
-        })
+    //     document.getElementById("arrow").addEventListener('click', (e) => {
+    //         scrollToTop()
+    //         e.stopPropagation()
+    //         e.preventDefault()
+    //     })
 
-    }
+    // }
 }
 
 window.onload = init
