@@ -56,7 +56,7 @@ const update_images = () => {
 
 const initHome = () => {
     document.getElementById("arrow-dwn").addEventListener('click', (e) => {
-        window.scrollTo(0, document.body.scrollHeight - document.body.scrollHeight / 8);
+        window.scrollTo(0, document.body.scrollHeight);
         e.stopPropagation()
         e.preventDefault()
     })
