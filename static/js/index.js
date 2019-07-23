@@ -54,16 +54,16 @@ const update_images = () => {
 }
 
 
-// const initHome = () => {
-//     document.getElementById("arrow-dwn").addEventListener('click', (e) => {
-//         window.scrollTo(0, document.body.scrollHeight - document.body.scrollHeight / 8);
-//         e.stopPropagation()
-//         e.preventDefault()
-//     })
-// }
+const initHome = () => {
+    document.getElementById("arrow-dwn").addEventListener('click', (e) => {
+        window.scrollTo(0, document.body.scrollHeight - document.body.scrollHeight / 8);
+        e.stopPropagation()
+        e.preventDefault()
+    })
+}
 
-// window.onload = initHome
 window.onresize = update_images
 window.onorientationchange = update_images
 
 update_images()
+initHome()
