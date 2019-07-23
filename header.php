@@ -21,7 +21,7 @@
     <?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php if(is_front_page()) echo 'class="homepage"'; ?>>
 
 
     <div class="mobile-nav-content" id="mobile-nav-content">
@@ -54,4 +54,4 @@
         </nav>
 
     </div>
-    <div class="main-content">
+    

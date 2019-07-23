@@ -19,8 +19,7 @@ body {
 body {
     width: 100%;
     position: relative;
-    top: 0;
-    left: 0;
+    height: 200vh;
     margin: 0;
     padding: 0px;
     font-family: sukhumvit_setlight, sans-serif;
@@ -28,13 +27,32 @@ body {
     grid-template-rows: auto 1fr auto;
 }
 
+body.homepage {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0px;
+    font-family: sukhumvit_setlight, sans-serif;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+}
+
 .main-content {
     grid-row: 2;
     transition: .8s;
-    width: 100%;
+    width: 80%;
+    max-width: 1200px;
     height: 100%;
     font-family: sukhumvit_setlight, sans-serif;
     z-index: 1;
+    margin: auto;
+}
+
+body.homepage .main-content {
+    grid-row: 3;
+    display: grid;
 }
 
 #title-bar {
@@ -48,6 +66,22 @@ body {
     max-width: 1200px;
     z-index: 2;
     grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: sukhumvit_setthin, sans-serif;
+}
+
+body.homepage #title-bar {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 80%;
+    max-width: 1200px;
+    z-index: 2;
+    grid-row: 2;
     display: grid;
     grid-template-columns: 1fr 1fr;
     font-family: sukhumvit_setthin, sans-serif;
@@ -200,6 +234,21 @@ footer {
     grid-template-rows: auto auto auto;
 }
 
+body.homepage footer {
+    padding-top: 50px;
+    margin: auto;
+    width: 80%;
+    max-width: 1200px;
+    grid-row: 4;
+    padding-bottom: 50px;
+    font-family: sukhumvit_setlight, sans-serif;
+    font-weight: lighter;
+    font-size: 0.8em;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto auto;
+}
+
 footer p {
     margin: 0;
 }
@@ -250,16 +299,6 @@ footer .sv9 {
 #footer-biel,
 #footer-vevey {
     display: block;
-}
-
-.blur {
-    transition: .8s;
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
-    filter: blur(5px);
-    background-color: #fff;
 }
 
 .mobile-nav-content {
@@ -371,12 +410,54 @@ a {
 }
 
 #home-images {
-    display: inline;
-    position: absolute;
-    top: 0;
-    left: 0;
+    grid-row: 1;
+    grid-column: 1;
+    display: grid;
+    position: relative;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+}
+
+#home-title {
+    grid-row: 1;
+    grid-column: 1;
+    position: relative;
+    z-index: 5;
+    color: white;
+    font-size: 5em;
+    justify-self: center;
+    align-self: center;
+}
+
+#home-sv9 {
+    grid-row: 1;
+    grid-column: 1;
+    display: grid;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: 5;
+    grid-template-rows: 1fr auto;
+}
+
+#arrow-dwn {
+    font-size: 4em;
+    color: white;
+    position: relative;
+    z-index: 5;
+    align-self: end;
+    justify-self: center;
+}
+
+#overlay {
+    grid-row: 1;
+    grid-column: 1;
+    width: 100%;
+    height: 100vh;
+    background-color: #2A2A2A;
+    opacity: .2;
+    position: relative;
+    z-index: 4;
 }
 
 ion-icon {
@@ -414,15 +495,32 @@ ion-icon {
     }
 }
 
-#title-bar.white a,
-#title-bar.white .menu-icon {
+footer span.white {
     color: white !important;
+}
+
+footer span.white {
+    position: relative;
+    z-index: 3;
+    font-size: 2em;
 }
 
 #title-bar li.menu-item-703 a,
 #title-bar li.menu-item-703.white a,
 li.menu-item-703 a {
     color: #D0232D !important;
+}
+
+#title-bar.homepage>#title {
+    display: none;
+}
+
+#title-bar.homepage>nav {
+    display: none;
+}
+
+#title-bar.homepage>.mobile-nav-btn {
+    display: inline!important;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -456,9 +554,6 @@ li.menu-item-703 a {
 }
 
 @media only screen and (max-width: 800px) {
-    #title {
-        font-size: 1.6em;
-    }
     #contact-content {
         text-align: center;
     }
@@ -498,5 +593,11 @@ li.menu-item-703 a {
     }
     .mobile-nav-btn {
         display: inline!important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #title {
+        font-size: 2em;
     }
 }
