@@ -8,6 +8,6 @@
 <div id="overlay"></div>
 <div id="home-images"></div>
 <div class="main-content">
-    <p style="font-size: 5em;margin: 0;align-self: center;">STUDIOV9 est un atelier d'architecture<br> fondé par Bastien Jeandrevin,<br>Tanguy Poffet et<br>Sacha Rouiller.</p>
+    <p id="about-text">STUDIOV9 est un atelier d'architecture<br> fondé par Bastien Jeandrevin,<br>Tanguy Poffet et<br>Sacha Rouiller.</p>
 
 <?php get_footer('nocontact'); ?>
