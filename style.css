@@ -24,7 +24,7 @@ body {
     left: 0;
     margin: 0;
     padding: 0px;
-    font-family: sukhumvit_setlight, sans-serif;
+    font-family: sukhumvit_setthin, sans-serif;
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
@@ -40,7 +40,7 @@ body.homepage {
     width: 80%;
     max-width: 1200px;
     height: 100%;
-    font-family: sukhumvit_setlight, sans-serif;
+    font-family: sukhumvit_setthin, sans-serif;
     z-index: 1;
     margin: auto;
 }
@@ -210,7 +210,7 @@ footer {
     max-width: 1200px;
     grid-row: 3;
     padding-bottom: 50px;
-    font-family: sukhumvit_setlight, sans-serif;
+    font-family: sukhumvit_setthin, sans-serif;
     font-weight: lighter;
     font-size: 0.8em;
     display: grid;
@@ -219,18 +219,7 @@ footer {
 }
 
 body.homepage footer {
-    padding-top: 50px;
-    margin: auto;
-    width: 80%;
-    max-width: 1200px;
     grid-row: 4;
-    padding-bottom: 50px;
-    font-family: sukhumvit_setlight, sans-serif;
-    font-weight: lighter;
-    font-size: 0.8em;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-template-rows: auto auto auto;
 }
 
 footer p {
