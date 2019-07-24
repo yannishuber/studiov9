@@ -464,6 +464,7 @@ ion-icon {
     font-size: 4em;
     margin: 0;
     align-self: center;
+    text-align: center;
 }
 
 @keyframes spin {
