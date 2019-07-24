@@ -8,6 +8,7 @@ function wpb_custom_new_menu()
 }
 add_action('init', 'wpb_custom_new_menu');
 
+wp_enqueue_script('script', get_template_directory_uri() . '/static/js/script.js');
 
 function enqueue_front_page_scripts()
 {
@@ -18,7 +19,7 @@ function enqueue_front_page_scripts()
 }
 add_action('wp_enqueue_scripts', 'enqueue_front_page_scripts');
 
-wp_enqueue_script('script', get_template_directory_uri() . '/static/js/script.js');
+
 
 function ajax_images_handler()
 {

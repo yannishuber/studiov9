@@ -10,25 +10,14 @@ html,
 body {
     width: 100%;
     height: 100%;
-    scroll-behavior: smooth;
 }
 
-.mobile {
+
+/* .mobile {
     display: none;
-}
+} */
 
 body {
-    width: 100%;
-    position: relative;
-    height: 200vh;
-    margin: 0;
-    padding: 0px;
-    font-family: sukhumvit_setlight, sans-serif;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-}
-
-body.homepage {
     width: 100%;
     position: relative;
     top: 0;
@@ -37,6 +26,11 @@ body.homepage {
     padding: 0px;
     font-family: sukhumvit_setlight, sans-serif;
     display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+body.homepage {
+    height: 200vh;
     grid-template-rows: auto auto 1fr auto;
 }
 
@@ -73,19 +67,7 @@ body.homepage .main-content {
 }
 
 body.homepage #title-bar {
-    position: relative;
-    top: 0;
-    left: 0;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    width: 80%;
-    max-width: 1200px;
-    z-index: 2;
     grid-row: 2;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    font-family: sukhumvit_setthin, sans-serif;
 }
 
 .mobile-nav-content a,
@@ -335,7 +317,6 @@ footer .sv9 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    height: 100%;
 }
 
 #contact-content {
@@ -442,9 +423,9 @@ a {
     grid-template-rows: 1fr auto;
 }
 
-#arrow-dwn {
-    font-size: 4em;
-    color: white;
+#arrow-down {
+    width: 40px;
+    margin-bottom: 30px;
     position: relative;
     z-index: 5;
     align-self: end;
@@ -491,7 +472,7 @@ ion-icon {
 }
 
 #about-text {
-    font-size: 5em;
+    font-size: 4em;
     margin: 0;
     align-self: center;
 }

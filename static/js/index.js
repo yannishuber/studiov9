@@ -53,17 +53,11 @@ const update_images = () => {
     }
 }
 
-
-const initHome = () => {
-    document.getElementById("arrow-dwn").addEventListener('click', (e) => {
-        window.scrollTo(0, document.body.scrollHeight);
-        e.stopPropagation()
-        e.preventDefault()
-    })
+const scrollDown = () => {
+    scrollToY((document.body.scrollHeight || document.documentElement.scrollHeight) / 2, 500, 'easeOutCubic');
 }
 
 window.onresize = update_images
 window.onorientationchange = update_images
 
 update_images()
-initHome()
