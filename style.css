@@ -48,6 +48,7 @@ body.homepage {
 body.homepage .main-content {
     grid-row: 3;
     display: grid;
+    opacity: 0;
 }
 
 #title-bar {

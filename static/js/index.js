@@ -57,7 +57,15 @@ const scrollDown = () => {
     scrollToY((document.body.scrollHeight || document.documentElement.scrollHeight) / 2, 500, 'easeOutCubic');
 }
 
+const scrollOpacity = () => {
+    var height = (document.body.scrollHeight || document.documentElement.scrollHeight) / 2
+    var cur = document.body.scrollTop || document.documentElement.scrollTop
+    document.querySelector('.main-content').style.opacity = Math.pow((cur / height), 3)
+    document.querySelector('#title-bar').style.opacity = Math.pow((cur / height), 3)
+}
+
 window.onresize = update_images
 window.onorientationchange = update_images
+window.onscroll = scrollOpacity
 
 update_images()
