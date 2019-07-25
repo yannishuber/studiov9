@@ -12,13 +12,7 @@ body {
     height: 100%;
 }
 
-
-/* .mobile {
-    display: none;
-} */
-
 body {
-    width: 100%;
     position: relative;
     top: 0;
     left: 0;
@@ -40,7 +34,6 @@ body.homepage {
     width: 80%;
     max-width: 1200px;
     height: 100%;
-    font-family: sukhumvit_setthin, sans-serif;
     z-index: 1;
     margin: auto;
 }
@@ -69,6 +62,7 @@ body.homepage .main-content {
 
 body.homepage #title-bar {
     grid-row: 2;
+    opacity: 0;
 }
 
 .mobile-nav-content a,
@@ -244,7 +238,8 @@ footer p {
     justify-self: end;
 }
 
-#arrow:hover {
+#arrow:hover,
+#arrow-down:hover {
     cursor: pointer;
 }
 
@@ -349,7 +344,6 @@ footer .sv9 {
 
 .menu-icon:hover,
 a:hover {
-    /* display: block; */
     color: #555555;
 }
 
@@ -444,21 +438,6 @@ ion-icon {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-}
-
-#home-loader {
-    border: 5px solid;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border-color: black transparent transparent;
-    animation: spin 2s linear infinite;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
 }
 
 #about-text {
