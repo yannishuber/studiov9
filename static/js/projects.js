@@ -1,4 +1,5 @@
 const proj = () => {
+    init()
     document.querySelectorAll('.project-item-image').forEach((e) => setTimeout(() => { e.style.opacity = 1 }, 100))
 }
 
