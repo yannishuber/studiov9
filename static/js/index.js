@@ -54,7 +54,7 @@ const update_images = () => {
 }
 
 const scrollDown = () => {
-    scrollToY((document.body.scrollHeight || document.documentElement.scrollHeight) / 2, 500, 'easeOutCubic');
+    scrollToY((document.body.scrollHeight || document.documentElement.scrollHeight) / 2, 100, 'easeOutCubic');
 }
 
 const scrollOpacity = () => {

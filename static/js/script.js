@@ -90,7 +90,7 @@ const init = () => {
     if (document.getElementById("arrow") != null) {
 
         document.getElementById("arrow").addEventListener('click', (e) => {
-            scrollToY(0, 500, 'easeOutCubic')
+            scrollToY(0, 1500, 'easeOutCubic')
             e.stopPropagation()
             e.preventDefault()
         })
