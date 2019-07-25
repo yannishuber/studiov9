@@ -15,6 +15,8 @@ function enqueue_front_page_scripts()
     if (is_front_page()) {
         wp_enqueue_script('homeimages', get_template_directory_uri() . '/static/js/index.js');
         wp_localize_script('homeimages', 'wpurl', array('ajaxurl' => admin_url('admin-ajax.php')));
+    }else if(is_page('projets')){
+        wp_enqueue_script('projectscript', get_template_directory_uri() . '/static/js/projects.js');
     }
 }
 add_action('wp_enqueue_scripts', 'enqueue_front_page_scripts');
