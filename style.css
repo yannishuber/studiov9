@@ -228,8 +228,9 @@ footer {
 }
 
 #social {
-    grid-row: 1;
-    grid-column: 3;
+    grid-row: 1 /span 2;
+    justify-self: right;
+    text-align: right;
 }
 
 #home-info {
@@ -299,6 +300,12 @@ footer .sv9 {
 #footer-biel,
 #footer-vevey {
     display: block;
+}
+
+#legal {
+    grid-row: 1;
+    grid-column: 1;
+    justify-self: left;
 }
 
 .mobile-nav-content {
@@ -530,6 +537,11 @@ li.menu-item-703 a {
     display: inline!important;
 }
 
+#adresses {
+    display: grid;
+    grid-row: 1;
+}
+
 @media only screen and (max-width: 1400px) {
     #project-container {
         grid-template-columns: 1fr 1fr;
@@ -569,6 +581,19 @@ li.menu-item-703 a {
 @media only screen and (max-width: 800px) {
     #contact-content {
         text-align: center;
+    }
+    footer {
+        grid-template-columns: 1fr auto;
+        padding-bottom: 20px;
+    }
+    #home-footer {
+        grid-template-columns: 1fr auto;
+    }
+    #social {
+        grid-row: 4 !important;
+        text-align: left;
+        justify-self: left !important;
+        margin-top: 10px;
     }
     #contact {
         display: grid;
