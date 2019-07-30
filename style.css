@@ -658,3 +658,9 @@ li.menu-item-703 a {
         font-size: 1.8em;
     }
 }
+
+@media screen and ( max-height: 400px) {
+    #about-text {
+        font-size: .8em;
+    }
+}
