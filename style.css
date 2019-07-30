@@ -589,8 +589,7 @@ li.menu-item-703 a {
     }
     footer {
         grid-template-columns: 1fr auto;
-        padding: 0px;
-        margin-bottom: 20px;
+        padding-bottom: 20px
     }
     #home-footer {
         grid-template-columns: auto 1fr;
