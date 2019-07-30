@@ -329,6 +329,10 @@ footer .sv9 {
     right: 0 !important;
 }
 
+#social a {
+    text-decoration: none;
+}
+
 #contact {
     display: grid;
     grid-template-columns: 1fr 1fr;
