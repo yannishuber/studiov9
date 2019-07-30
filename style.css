@@ -582,6 +582,9 @@ li.menu-item-703 a {
     #contact-content {
         text-align: center;
     }
+    #about-text {
+        font-size: 2em;
+    }
     footer {
         grid-template-columns: 1fr auto;
         padding-bottom: 20px;
