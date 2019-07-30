@@ -9,4 +9,4 @@
     </div>
 </section>
 
-<?php get_footer('nocontact'); ?>
+<?php get_footer('home'); ?>
