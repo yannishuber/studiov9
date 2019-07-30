@@ -1,7 +1,6 @@
 <footer>
     <div id="social" style="grid-row: 3; justify-self: right">
-        <a id="facebook" target="_blank" href="https://facebook.com/STUDIOV9architectes">FACEBOOK</a>
-        <a id="instagram" target="_blank" href="https://instagram.com/studiov9">INSTAGRAM</a>
+        <a id="facebook" target="_blank" href="https://facebook.com/STUDIOV9architectes">FACEBOOK</a><a id="instagram" target="_blank" href="https://instagram.com/studiov9">INSTAGRAM</a>
     </div>
     <div id="adresses">
         <div id="footer-biel">

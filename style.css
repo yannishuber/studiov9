@@ -224,7 +224,7 @@ footer {
 }
 
 #instagram {
-    margin-left: 5px;
+    margin-left: 8px;
 }
 
 #social {
@@ -587,13 +587,18 @@ li.menu-item-703 a {
         padding-bottom: 20px;
     }
     #home-footer {
-        grid-template-columns: 1fr auto;
+        grid-template-columns: auto 1fr;
+    }
+    #legal {
+        grid-row: 4;
+        grid-column: 2;
+        justify-self: left;
+        margin-left: 8px;
     }
     #social {
         grid-row: 4 !important;
         text-align: left;
         justify-self: left !important;
-        margin-top: 10px;
     }
     #contact {
         display: grid;
@@ -631,6 +636,9 @@ li.menu-item-703 a {
     }
     .mobile-nav-btn {
         display: inline!important;
+    }
+    #copyright {
+        margin-bottom: 10px;
     }
 }
 
