@@ -21,7 +21,7 @@
     <?php wp_head(); ?>
 </head>
 
-<body <?php if(is_front_page()) echo 'class="homepage"'; ?>>
+<body <?php if (is_front_page()) echo 'class="homepage"'; ?>>
 
 
     <div class="mobile-nav-content" id="mobile-nav-content">
@@ -34,24 +34,33 @@
                 'menu' => 'sv9-menu',
                 'container_class' => 'sv9-menu'
             ));
-            ?></div>
-    </div>
-
-    <div id="title-bar">
-        <a id="title" href="<?php echo get_bloginfo('wpurl'); ?>">STUDIO<b>V9</b></a>
-        <nav role="navigation">
-            <?php
-            wp_nav_menu(array(
-                'menu' => 'sv9-menu',
-                'container_class' => 'sv9-menu'
-            ));
             ?>
-        </nav>
-        <nav class="mobile-nav-btn" role="navigation">
-            <span class="menu-icon" id="open">
-                <ion-icon name="menu"></ion-icon>
-            </span>
-        </nav>
-
+        </div>
     </div>
-    
+
+    <?php if (is_front_page()) : ?>
+        <div id="home-text">
+            <span id="home-title">STUDIO<b>V9</b> <span style="opacity: .6">ARCHITECTURE</span></span>
+            <img id="arrow-down" onclick="scrollDown()" src="<?php echo get_bloginfo('template_directory'); ?>/static/arrow-down.png" />
+        </div>
+        <div id="overlay"></div>
+        <div id="home-images"></div>
+    <?php endif; ?>
+
+    <div id="content-area">
+        <div id="title-bar">
+            <a id="title" href="<?php echo get_bloginfo('wpurl'); ?>">STUDIO<b>V9</b></a>
+            <nav role="navigation">
+                <?php
+                wp_nav_menu(array(
+                    'menu' => 'sv9-menu',
+                    'container_class' => 'sv9-menu'
+                ));
+                ?>
+            </nav>
+            <nav class="mobile-nav-btn" role="navigation">
+                <span class="menu-icon" id="open">
+                    <ion-icon name="menu"></ion-icon>
+                </span>
+            </nav>
+        </div>

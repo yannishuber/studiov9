@@ -1,14 +1,10 @@
-<?php
-get_header();
-?>
+<?php get_header(); ?>
 
-<section id="page-main" class="content">
-    <?php
-    while (have_posts()) {
+<section class="main-content">
+        <?php
         the_post();
         the_content();
-    }
-?>
+        ?>
 </section>
-<?php
-get_footer();
+
+<?php get_footer(); ?>

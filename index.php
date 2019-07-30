@@ -1,8 +1,12 @@
 <?php get_header(); ?>
 
-    <div id="home-images">
-        <div id="home-loader"></div>
+<section class="main-content">
+    <div id="about-text">
+        <?php
+        the_post();
+        the_content();
+        ?>
     </div>
-<div class="main-content">
+</section>
 
 <?php get_footer('nocontact'); ?>
