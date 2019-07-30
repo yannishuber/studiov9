@@ -24,7 +24,7 @@ body {
 }
 
 body.homepage {
-    height: 200vh;
+    min-height: 200vh;
     grid-template-rows: auto auto;
 }
 
@@ -40,6 +40,7 @@ body.homepage {
 body.homepage #content-area {
     grid-row: 2;
     height: 100vh;
+    min-height: 400px;
 }
 
 .main-content {
@@ -588,7 +589,8 @@ li.menu-item-703 a {
     }
     footer {
         grid-template-columns: 1fr auto;
-        padding-bottom: 20px;
+        padding: 0px;
+        margin-bottom: 20px;
     }
     #home-footer {
         grid-template-columns: auto 1fr;
@@ -652,15 +654,8 @@ li.menu-item-703 a {
     }
     #about-text {
         font-size: 1.4em;
-        /* line-height: 3em; */
     }
     #home-title {
         font-size: 1.8em;
-    }
-}
-
-@media screen and ( max-height: 400px) {
-    #about-text {
-        font-size: .8em;
     }
 }
