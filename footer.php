@@ -1,4 +1,8 @@
 <footer>
+    <div id="social" style="grid-row: 3; justify-self: right">
+        <a id="facebook" target="_blank" href="https://facebook.com/STUDIOV9architectes">FACEBOOK</a>
+        <a id="instagram" target="_blank" href="https://instagram.com/studiov9">INSTAGRAM</a>
+    </div>
     <div id="footer-biel">
         <p class="addr">Dammweg 3</p>
         <p class="addr">2502 Biel/Bienne</p>

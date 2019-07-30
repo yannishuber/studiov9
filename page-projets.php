@@ -26,4 +26,4 @@ get_header();
 </section>
 
 <?php
-get_footer('nocontact');
+get_footer('home');

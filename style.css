@@ -214,14 +214,28 @@ footer {
     font-weight: lighter;
     font-size: 0.8em;
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto auto;
 }
 
 #home-footer {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-items: center;
+    grid-template-columns: 1fr 1fr;
     text-decoration: none;
+}
+
+#instagram {
+    margin-left: 5px;
+}
+
+#social {
+    grid-row: 1;
+    grid-column: 3;
+}
+
+#home-info {
+    grid-row: 1;
+    grid-column: 1;
+    justify-self: left;
 }
 
 #home-footer a {
@@ -246,7 +260,7 @@ footer p {
     font-size: 1.5em;
     grid-column: 2;
     grid-row: 3;
-    justify-self: end;
+    justify-self: center;
 }
 
 #arrow:hover,
@@ -263,17 +277,23 @@ footer .sv9 {
     grid-column: 1;
     grid-row: 1;
     margin-bottom: 10px;
+    justify-self: left;
+    text-align: left;
 }
 
 #footer-vevey {
     grid-column: 1;
     grid-row: 2;
     margin-bottom: 10px;
+    justify-self: left;
+    text-align: left;
 }
 
 #copyright {
     grid-column: 1;
     grid-row: 3;
+    justify-self: left;
+    text-align: left;
 }
 
 #footer-biel,
@@ -335,6 +355,19 @@ footer .sv9 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+#home-title-archi {
+    opacity: .6;
+    font-family: sukhumvit_setthin, sans-serif;
+}
+
+#home-title-v9 {
+    font-family: sukhumvit_setsemi_bold, sans-serif;
+}
+
+#home-title-studio {
+    font-family: sukhumvit_setlight, sans-serif;
 }
 
 .menu-icon {
@@ -578,7 +611,7 @@ li.menu-item-703 a {
     }
     #about-text {
         font-size: 1.4em;
-        line-height: 3em;
+        /* line-height: 3em; */
     }
     #home-title {
         font-size: 1.8em;

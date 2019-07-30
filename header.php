@@ -40,7 +40,7 @@
 
     <?php if (is_front_page()) : ?>
         <div id="home-text">
-            <span id="home-title">STUDIO<b>V9</b> <span style="opacity: .6">ARCHITECTURE</span></span>
+            <span id="home-title"><span id="home-title-studio">STUDIO</span><span id="home-title-v9">V9</span> <span id="home-title-archi">ARCHITECTES</span></span>
             <img id="arrow-down" onclick="scrollDown()" src="<?php echo get_bloginfo('template_directory'); ?>/static/arrow-down.png" />
         </div>
         <div id="overlay"></div>
