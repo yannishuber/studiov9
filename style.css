@@ -502,6 +502,10 @@ ion-icon {
     text-align: center;
 }
 
+#about-text p {
+    margin: 0px;
+}
+
 @keyframes spin {
     100% {
         transform: rotate(360deg);
@@ -553,7 +557,7 @@ li.menu-item-703 a {
         width: 95%;
     }
     #about-text {
-        font-size: 3em;
+        font-size: 2em;
     }
     #home-title {
         font-size: 3em;
@@ -581,9 +585,6 @@ li.menu-item-703 a {
 @media only screen and (max-width: 800px) {
     #contact-content {
         text-align: center;
-    }
-    #about-text {
-        font-size: 2em;
     }
     footer {
         grid-template-columns: 1fr auto;
