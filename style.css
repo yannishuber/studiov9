@@ -553,6 +553,7 @@ li.menu-item-703 a {
 
 .wp-block-image figcaption {
     text-align: center;
+    font-size: 0.8em;
 }
 
 @media only screen and (max-width: 1400px) {
