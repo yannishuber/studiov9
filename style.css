@@ -63,6 +63,12 @@ body.homepage .main-content {
     margin-bottom: auto;
 }
 
+.wp-block-image img {
+    max-width: 100% !important;
+    width: auto !important;
+    height: auto !important;
+}
+
 #title-bar {
     position: relative;
     top: 0;
@@ -116,6 +122,19 @@ body.homepage #title-bar {
     text-align: center;
     position: relative;
     overflow: hidden;
+}
+
+.sv9-menu-proj .current-menu-item {
+    text-decoration: underline;
+}
+
+.sv9-menu-mobile-proj .sub-menu .current-menu-item {
+    text-decoration: underline;
+}
+
+.sv9-menu-proj ul {
+    margin: 0px;
+    padding: 0px;
 }
 
 .project-item-image {
@@ -196,6 +215,12 @@ nav li {
 
 .mobile-nav-content li {
     margin-bottom: 50px;
+}
+
+.mobile-nav-content .sub-menu li {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    text-transform: none !important;
 }
 
 .entry-content div:hover,
@@ -415,6 +440,18 @@ a {
     text-transform: uppercase;
     position: relative;
     z-index: 3;
+}
+
+.sv9-menu-mobile-proj {
+    text-transform: uppercase;
+    position: relative;
+    z-index: 3;
+}
+
+.sv9-menu-mobile-proj .sub-menu {
+    position: relative;
+    z-index: 3;
+    font-size: .75em;
 }
 
 .slider-item {

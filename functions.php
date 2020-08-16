@@ -4,7 +4,13 @@ add_theme_support('post-thumbnails');
 
 function wpb_custom_new_menu()
 {
-    register_nav_menu('my-custom-menu', __('sv9-menu'));
+    register_nav_menus(
+        array(
+          'sv9-menu' => __( 'sv9-menu' ),
+          'sv9-menu-proj' => __( 'sv9-menu-proj'),
+          'sv9-menu-mobile-proj' => __( 'sv9-menu-mobile-proj')
+        )
+      );
 }
 add_action('init', 'wpb_custom_new_menu');
 

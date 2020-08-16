@@ -30,10 +30,19 @@
                 <ion-icon name="close"></ion-icon>
             </span>
             <?php
-            wp_nav_menu(array(
-                'menu' => 'sv9-menu',
-                'container_class' => 'sv9-menu'
-            ));
+            
+            if (is_page('projets') || is_category()) {
+                wp_nav_menu(array(
+                    'theme_location' => 'sv9-menu-mobile-proj',
+                    'container_class' => 'sv9-menu-mobile-proj'
+                ));
+            } else {
+                wp_nav_menu(array(
+                    'theme_location' => 'sv9-menu',
+                    'container_class' => 'sv9-menu'
+                ));
+    
+            }
             ?>
         </div>
     </div>
@@ -53,11 +62,22 @@
             <nav role="navigation">
                 <?php
                 wp_nav_menu(array(
-                    'menu' => 'sv9-menu',
+                    'theme_location' => 'sv9-menu',
                     'container_class' => 'sv9-menu'
                 ));
                 ?>
             </nav>
+
+            <?php if (is_page('projets') || is_category()) { ?>
+            <nav class="nav-projets" role="navigation">
+                <?php 
+                wp_nav_menu(array(
+                        'theme_location' => 'sv9-menu-proj',
+                        'container_class' => 'sv9-menu-proj'
+                    ));
+                    ?>
+            </nav>
+            <?php } ?>
             <nav class="mobile-nav-btn" role="navigation">
                 <span class="menu-icon" id="open">
                     <ion-icon name="menu"></ion-icon>
