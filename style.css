@@ -579,6 +579,10 @@ li.menu-item-703 a {
     display: inline!important;
 }
 
+#menu-project-menu {
+    font-size: 1.0em;
+}
+
 #adresses {
     display: grid;
     grid-row: 1;
