@@ -81,7 +81,7 @@ body.homepage .main-content {
     z-index: 2;
     grid-row: 1;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto 1fr;
     font-family: sukhumvit_setthin, sans-serif;
 }
 
