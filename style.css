@@ -24,6 +24,7 @@ body {
 body.homepage {
     min-height: 200vh;
     grid-template-rows: auto auto;
+    display: grid;
 }
 
 #content-area {
