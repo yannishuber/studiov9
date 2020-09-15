@@ -19,6 +19,8 @@ body {
     margin: 0;
     padding: 0px;
     font-family: sukhumvit_setthin, sans-serif;
+    display: grid;
+    grid-template-rows: auto;
 }
 
 body.homepage {
@@ -27,12 +29,12 @@ body.homepage {
 }
 
 #content-area {
+    grid-row: 1;
     position: relative;
     z-index: 5;
     background-color: white;
     display: grid;
     grid-template-rows: auto 1fr auto;
-    min-height: 100%;
 }
 
 body.homepage #content-area {
@@ -50,7 +52,8 @@ body.homepage #content-area {
     margin: auto;
     margin-top: 0;
     margin-bottom: 0;
-    height: min-content;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
 }
 
 body.homepage .main-content {
