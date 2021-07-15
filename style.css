@@ -603,7 +603,7 @@ li.menu-item-703 a {
 
 @media only screen and (max-width: 1000px) {
     #title-bar {
-        width: 95%;
+        width: 95vw;
     }
     #about-text {
         font-size: 2em;
@@ -612,19 +612,19 @@ li.menu-item-703 a {
         font-size: 3em;
     }
     .main-content {
-        width: 95%;
+        width: 95vw;
     }
     #page-main {
-        width: 95%;
+        width: 95vw;
     }
     #project-container {
-        width: 95%;
+        width: 95vw;
     }
     footer {
-        width: 95%;
+        width: 95vw;
     }
     #contact {
-        width: 95%;
+        width: 95vw;
     }
     .project-item-title {
         font-size: 1.2em;
