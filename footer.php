@@ -9,8 +9,8 @@
             <p><a href="mailto:info@studiov9.ch">info@studiov9.ch</a></p>
         </div>
         <div id="footer-vevey">
-            <p class="addr">Rue du Théâtre 1</p>
-            <p class="addr">1800 Vevey</p>
+            <p class="addr">Route de Sallaz 13</p>
+            <p class="addr">1071 Rivaz</p>
             <p><a href="mailto:rouiller@studiov9.ch">rouiller@studiov9.ch</a></p>
         </div>
     </div>
