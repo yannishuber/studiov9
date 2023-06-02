@@ -1,4 +1,5 @@
 const update_images = () => {
+    init()
 
 
     // Remove loader if still there
