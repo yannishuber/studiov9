@@ -71,7 +71,6 @@ function scrollToY(scrollTargetY, speed, easing) {
 
 const init = () => {
 
-    update_images()
     document.getElementById("open").addEventListener('click', (e) => {
         document.getElementById("mobile-nav-content").classList.add("show")
         e.stopPropagation()

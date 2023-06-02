@@ -36,3 +36,5 @@ const scrollOpacity = () => {
 
 window.onscroll = scrollOpacity
 
+update_images()
+
