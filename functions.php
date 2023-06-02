@@ -26,34 +26,3 @@ function enqueue_front_page_scripts()
     }
 }
 add_action('wp_enqueue_scripts', 'enqueue_front_page_scripts');
-
-
-
-function ajax_images_handler()
-{
-    if (isset($_POST['device'])) {
-        if ($_POST['device'] == 'mobile') {
-            $desktop = array(
-                'post_type' => 'attachment',
-                'category_name' => 'accueil-mobile',
-
-            );
-            $attachments_desktop = get_posts($desktop);
-            shuffle($attachments_desktop);
-            echo json_encode(array_map(create_function('$o', 'return $o->guid;'), $attachments_desktop));
-        } else if ($_POST['device'] == 'desktop') {
-            $desktop = array(
-                'post_type' => 'attachment',
-                'category_name' => 'accueil',
-
-            );
-            $attachments_desktop = get_posts($desktop);
-            shuffle($attachments_desktop);
-            echo json_encode(array_map(create_function('$o', 'return $o->guid;'), $attachments_desktop));
-        }
-    }
-
-    wp_die();
-}
-add_action('wp_ajax_nopriv_images', 'ajax_images_handler');
-add_action('wp_ajax_images', 'ajax_images_handler');

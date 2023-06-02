@@ -53,7 +53,42 @@
             <img id="arrow-down" onclick="scrollDown()" src="<?php echo get_bloginfo('template_directory'); ?>/static/arrow-down.png" />
         </div>
         <div id="overlay"></div>
-        <div id="home-images"></div>
+        <div id="home-images">
+            <?php
+                $mobile = array(
+                    'post_type' => 'attachment',
+                    'category_name' => 'accueil-mobile',
+    
+                );
+
+                $desktop = array(
+                    'post_type' => 'attachment',
+                    'category_name' => 'accueil',
+    
+                );
+
+
+                $attachments_desktop = get_posts($desktop);
+                $attachments_mobile = get_posts($mobile);
+
+                // get length of shortest array
+                $length = min(count($attachments_desktop), count($attachments_mobile));
+
+                // shuffle both arrays
+                shuffle($attachments_desktop);
+                shuffle($attachments_mobile);
+
+                // for each element pair of the shortest array
+                for($i = 0; $i < $length; $i++){
+                    echo "<picture class=\"slider-item\">";
+                    echo "<source media='(max-width: 800px)' srcset='" . wp_get_attachment_image_src($attachments_mobile[$i]->ID, 'full')[0] . "' alt='" . get_post_meta( $attachments_mobile[$i]->ID, '_wp_attachment_image_alt', true) . "'>";
+                    echo "<img src='" . wp_get_attachment_image_src($attachments_desktop[$i]->ID, 'full')[0] . "' alt='" . get_post_meta( $attachments_desktop[$i]->ID, '_wp_attachment_image_alt', true) . "' />";
+                    echo "</picture>";
+                }
+
+
+            ?>
+        </div>
     <?php endif; ?>
 
     <div id="content-area">
