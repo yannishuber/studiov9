@@ -94,7 +94,7 @@
 
     <div id="content-area">
         <div id="title-bar">
-            <a id="title" href="<?php echo get_bloginfo('wpurl'); ?>#studiov9">STUDIO<b>V9</b></a>
+            <a id="title" href="<?php echo get_bloginfo('wpurl'); ?>#home">STUDIO<b>V9</b></a>
             <nav role="navigation">
                 <?php
                 wp_nav_menu(array(

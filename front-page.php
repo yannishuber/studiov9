@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <section class="main-content">
-    <a id="studiov9"></a>
+    <a id="home"></a>
     <div id="about-text">
         <?php
         the_post();
