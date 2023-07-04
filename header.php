@@ -15,8 +15,9 @@
     <link rel="icon" href="<?php echo get_bloginfo('template_directory'); ?>/static/studiov9.jpg" type="image/x-icon">
     <link href="<?php echo get_bloginfo('template_directory'); ?>/font/stylesheet.css" rel="stylesheet">
     <link href="<?php echo get_bloginfo('template_directory'); ?>/style.css" rel="stylesheet">
+    <?php rewind_posts(); ?>
 
-    <title><?php echo get_bloginfo('name'); ?></title>
+    <title><?php wp_title(); ?></title>
 
     <?php wp_head(); ?>
 </head>
