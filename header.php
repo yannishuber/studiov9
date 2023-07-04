@@ -82,7 +82,7 @@
                 // for each element pair of the shortest array
                 for($i = 0; $i < $length; $i++){
                     echo "<picture class=\"slider-item\">";
-                    echo "<source media='(max-width: 800px)' srcset='" . wp_get_attachment_image_src($attachments_mobile[$i]->ID, 'full')[0] . "' alt='" . get_post_meta( $attachments_mobile[$i]->ID, '_wp_attachment_image_alt', true) . "'>";
+                    echo "<source media='(max-width: 800px)' srcset='" . wp_get_attachment_image_src($attachments_mobile[$i]->ID, 'large')[0] . "' alt='" . get_post_meta( $attachments_mobile[$i]->ID, '_wp_attachment_image_alt', true) . "'>";
                     echo "<img src='" . wp_get_attachment_image_src($attachments_desktop[$i]->ID, 'full')[0] . "' alt='" . get_post_meta( $attachments_desktop[$i]->ID, '_wp_attachment_image_alt', true) . "' />";
                     echo "</picture>";
                 }
